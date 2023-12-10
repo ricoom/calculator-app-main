@@ -1,9 +1,29 @@
 const btns=document.querySelectorAll('button')
 const disp= document.getElementById('screen');
+const disp2= document.getElementById('title');
+
 var num1=0;
 var num2=0;
 var total=0;
 var op;
+window.onload=welcome()
+function welcome() {
+    setTimeout(() => {
+        disp2.textContent="Grace_calc"
+        disp2.style.opacity=0.2
+        disp2.textContent.charAt(0).trim()
+
+    }, 3300);
+    setTimeout(() => {
+        disp2.style.opacity=0.5
+    }, 3400);
+    setTimeout(() => {
+        disp2.style.opacity=0.8
+    }, 3500);
+    setTimeout(() => {
+        disp2.style.opacity=1
+    }, 3600);
+}
 function themechange() {
    if(document.getElementById('toggle').value)  {
     document.body.classList.toggle('dark-a')

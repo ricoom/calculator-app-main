@@ -176,7 +176,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .group-btn .look:checked + label {
   background-color: var(--togglebgkeypadbg1);
 }
-
+#title{
+  opacity: 0;
+}
 @media only screen and (max-width: 375px) {
   body {
     background-color: var(--mainBackground1);
